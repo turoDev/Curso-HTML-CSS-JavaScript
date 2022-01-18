@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Módulo 7 Obligatorio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script type="text/javascript" src="resources/js/jquery-2.1.4.min.js" ></script>
+
+        <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+        <script src="resources/js/bootstrap.min.js"></script>
+        <style type="text/css">
+            .carousel-inner .item img,
+            .carousel-inner .item img               { width: 100%;}
+            .container .carousel-indicators .active { background-color: gray;}
+            .container .carousel-indicators li      { border: 1.5px solid black;}
+            .container .panel-footer                { margin-top:20px;}
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <!--  Menu Navegador -->
+            <nav class="navbar navbar-inverse ">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#miMenu">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span> 
+                        </button>
+                        <a class="navbar-brand" href="index.html">TuroDev</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="miMenu">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="index.html">Inicio</a></li>
+                            <li><a href="resources/puzzle.html">Puzzle</a></li>
+                            <li><a href="resources/calculadora.html">Calculadora</a></li>
+                            <li><a href="resources/citas.html">Citas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Carrusel -->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- menú -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active"> 
+                        <a href="resources/puzzle.html">
+                            <img src="resources/images/slide_puzzle.png" alt="Puzzle" width="954" height="410">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="resources/calculadora.html">
+                            <img src="resources/images/slide_calc.png" alt="Calculadora" width="954" height="410">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="resources/citas.html">
+                            <img src="resources/images/slide_citas.png" alt="Citas" width="954" height="410">
+                        </a>
+                    </div>
+                </div>
+
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

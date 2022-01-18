@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'zero';
+    src: url('../fonts/zero hour.ttf');
+}
+@font-face {
+    font-family: 'digital';
+    src: url('../fonts/Digital-7.ttf');
+}
+@media (min-width: 0) {
+    td > div {
+        font-size: 0.8em;
+        width: 100%;
+        height: 20px;
+    }
+    input {
+        font-size: 0.6em;
+        height: 30px;
+        width: 35px;
+    }
+    .vis {
+        font-size: 0.7em;
+        height: 25px;
+    }
+}
+@media (min-width: 992px) {
+    td > div {
+        font-size: 1.8em;
+        width: 100%;
+        height: 30px;
+    }
+    input {
+        font-size: 1.3em;
+        height: 40px;
+        width: 60px;
+    }
+    .vis {
+        font-size: 1em;
+        height: 20px;
+    }
+}
+@media (min-width: 1200px) {
+    td > div {
+        font-size: 3em;
+        width: 100%;
+        height: 50px;
+    }
+    input {
+        font-size: 2em;
+        height: 60px;
+        width: 90px;
+    }
+    .vis {
+        font-size: 2em;
+        height: 30px;
+    }
+}
+
+table, td {
+    border-collapse: collapse;
+    padding: 0px;
+}
+td {
+    padding: 1px;
+}
+td > div {
+    font-family: digital, sans;
+    color: white;
+
+    background: black;
+    text-align: right;
+    border-radius: 0px;
+    padding-right: 5px;
+}
+
+input {
+    font-family: zero, sans;
+    background: radial-gradient(white, gray 300%);
+    text-align: center;
+
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+
+    border-style: outset;
+}
+input:hover {
+    border-style: double;
+}
+input:active {
+    border-style: inset;
+}
+.nmb {
+    background: radial-gradient(lightgray, gray 300%);
+}
+.opr {
+    background: radial-gradient(lightsteelblue, gray 300%);
+}
+
+.mem {
+    margin: 0px 0px 2% 0px;
+}
+.vis {
+    color: gray;
+}

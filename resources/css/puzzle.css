@@ -1,0 +1,30 @@
+#sortable { 
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sortable li { 
+    float: left; 
+    width: 33%; 
+}
+
+#sortable li img {
+    vertical-align: bottom;
+    width: 100%; 
+    height: auto;
+}
+
+@media (orientation:landscape){ #sortable {width: 80vh;}}
+@media (orientation:portrait) { #sortable {width: 80%;}}
+
+
+.panel-primary {
+    border-width: 2px; 
+    border-color: steelblue ;
+}
+.panel-primary > .panel-heading {
+    background: royalblue;
+    border-width: 2px;
+    border-color: steelblue;
+}

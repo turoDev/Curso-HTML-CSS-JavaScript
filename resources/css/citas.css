@@ -1,0 +1,134 @@
+.panel-primary {
+    border-width: 2px; 
+    border-color: goldenrod;
+    margin:0;
+    padding:0;
+    background-color:#ccc;
+}
+.panel-primary > .panel-heading {
+    background: orange;
+    border-width: 2px;
+    border-color: goldenrod;
+}
+
+img {
+    vertical-align:bottom;	
+}
+.contenido {
+    position:relative;
+    background-color:#000;
+    height:100%;
+    width:100%;
+    min-width:640px;
+}
+#caja {
+    position:relative;
+    text-align:right;
+    width:100%;
+    height:100%;
+}
+#foto{
+    height:427px;
+    max-height:427px;
+    width:auto;
+}
+.textos {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 50%;
+    color: #FFFFFF;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: large;
+}
+#persona {
+    font-style: italic;
+}
+.selector {
+    position:absolute;
+    width:100%;
+    bottom:10px;
+    z-index:100;
+}
+.selector   ul {
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    display:flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width:100px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.selector a {
+    display:block;
+    width:10px;
+    height:10px;
+    background-color: white;
+    border-radius:50%;
+}
+.selector a.on{
+    background-color: orange;
+}
+.selector a.off{
+    background-color: white;
+}
+.selector a:hover {
+    background-color: red;
+}
+#datos {
+    font-size: 0.8em;
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display:none;
+}
+#datos div {
+    font-size: 1em;
+    padding: 0.5em;
+    background-color: #fff;
+    border: 1px solid #000000;
+    margin-bottom:0.2em;
+}
+.editar {
+    background-color: #626262;
+    padding: 0.2em;
+    text-align: right;
+    height:32px;
+    cursor:pointer;
+}
+.editar img {
+    padding: 6px;
+    border-radius:50%;
+}
+.editar:hover > img {
+    background-color: #000000;
+}
+
+
+#datos div#botones {
+    border: 1px none #000000;
+    background-color:#ccc;
+}
+div #botones ul {
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+div #botones ul li {
+}
+div #botones ul li img {
+    width:20px;
+    height:20px;
+    padding: 0.3em;
+    border-radius:50%;
+    background-color: #626262;
+    margin-right:0.3em;
+}
+div #botones ul li img:hover {
+    background-color: white;
+}
